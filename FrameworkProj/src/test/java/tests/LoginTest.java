@@ -31,12 +31,13 @@ public class LoginTest extends Base {
 		landingpage.login().click();
 		
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.username().sendKeys(prop.getProperty("username"));
+		loginpage.username().sendKeys(prop.getProperty("email"));
 		loginpage.password().sendKeys(prop.getProperty("password"));
 		Thread.sleep(2000);
 		loginpage.Login_Button().click();
 		
 		AccountPage accountpage = new AccountPage(driver);
+		
 		Assert.assertTrue(accountpage.editYourAccountInformationOption().isDisplayed());
 	}
 	

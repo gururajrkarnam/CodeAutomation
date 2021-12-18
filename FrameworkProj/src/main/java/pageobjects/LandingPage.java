@@ -18,8 +18,16 @@ public class LandingPage {
 	@FindBy(xpath ="//a[@title='My Account']")
 	WebElement myAccountDropdown;
 	
+	@FindBy(xpath ="//a[text()='Cameras']")
+	WebElement Camera_Tab;
+	
+	
 	@FindBy(linkText="Login")
 	WebElement login;
+	
+	public WebElement Camera_Tab() {
+		return Camera_Tab;
+	}
 	
 	public WebElement myAccountDropdown() {
 		return myAccountDropdown;

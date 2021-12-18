@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.LoginTestWithDataProvider">
+      <class name="tests.CameraFunctionality">
         <methods>
-          <include name="login" invocation-numbers="0"/>
-          <include name="closure"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- tests.LoginTestWithDataProvider -->
+      </class> <!-- tests.CameraFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
